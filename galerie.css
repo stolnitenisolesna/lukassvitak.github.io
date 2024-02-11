@@ -1,0 +1,231 @@
+body {
+    margin: 0;
+    background: linear-gradient(rgba(85,37,130,0.8), rgba(85,37,130,0.8)), url('kontakt background.jpg') no-repeat;
+    background-size: cover; 
+    background-attachment: fixed;
+    }
+
+    .menu {
+    background: #552583;
+    height: 100px;
+    }
+    
+    .logo img {
+    width: 100px;
+    padding-top: 20px;
+    padding-left: 130px;
+    }
+    nav ul {
+    display: flex;
+    justify-content: space-between;
+    width: 30%;
+    margin: 0 auto;
+    position: relative;
+    bottom: 45px;
+    }
+
+    nav ul li {
+    list-style-type: none;
+    }
+
+    nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    }
+
+    nav ul li a:hover {
+    color: #f9a01b;
+    transition: color 0.4s;
+    }
+
+    .menu-button img {
+    width: 40px;
+    display: none;
+    }
+
+    .close-button img {
+    width: 40px;
+    display: none;
+    }
+
+    .galerie img {
+    width: 95%;
+    border-radius: 10px;
+    border: 2px solid white;
+    list-style-type: none;
+    margin-bottom: 12px;
+    }
+
+    .galerie {
+    display: flex;
+    padding: 5%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    position: relative;
+    bottom: 22px;
+    text-align: center;
+    }
+
+    .galerie2 img {
+    width: 95%;
+    border-radius: 10px;
+    border: 2px solid white;
+    margin-bottom: 12px;
+    }
+    
+    .galerie2 {
+    display: flex;
+    padding: 5%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    text-align: center;
+    }
+
+    .galerie-nadpis h1 {
+    text-align: center;
+    color: white;
+    margin-top: 50px;
+    }
+
+    .footer {
+        background: #552583;
+        position: relative;
+        bottom: 22px;
+        height: 100%;
+        }
+        
+        .footer h1 {
+        text-align: center;
+        color: white;
+        padding-top: 40px;
+        font-size: 17px;
+        }
+
+
+    @media screen and (max-width: 1000px){
+
+        header {
+        background-color: transparent;
+        padding: 15px;
+        }
+        
+        nav {
+        position: fixed;
+        top: 0;
+        left: -100%;
+        width: 60%;
+        height: 100%;
+        background-color: #552583;
+        padding-top: 60px;
+        text-align: center;
+        transition: left 0.3s ease;
+        border-right: 2px solid white;
+        z-index: 1;
+        }
+        
+        nav ul {
+        list-style-type: none;
+        padding: 0;
+        display: block;
+        margin: 0 auto;
+        padding-top: 50px;
+        
+        }
+        
+        nav li {
+        padding: 15px;
+        }
+        
+        nav a {
+        display: block;
+        color: white;
+        text-decoration: none;
+        }
+        
+        .menu-button, .close-button {
+        display: block;
+        position: fixed;
+        top: 15px;
+        left: 15px;
+        cursor: pointer;
+        z-index: 1;
+        color: white;
+        }
+        
+        .close-button {
+        display: none;
+        }
+        
+        .menu-button {
+        position: static;
+        }
+        
+        .menu-button img {
+        width: 40px;
+        display: flex;
+        padding-top: 15px;
+        }
+        .close-button img {
+        width: 40px;
+        display: flex;
+        padding-top: 15px;
+        }
+        
+        .logo {
+        float: right;
+        padding-right: 20px;
+        }
+
+        .galerie {
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+        }
+
+        .galerie2 {
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+        }
+
+        .video {
+            text-align: center;
+           }
+     }
+
+     @media screen and (max-width: 700px) {
+        .galerie {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        }
+
+        .galerie2 {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        }
+
+        .galerie img {
+         z-index: 2;
+        }
+    }
+
+        @media screen and (max-width: 600px){
+            nav {
+            width: 100%;
+            }
+
+        
+     }
+
+
+
+
+    
+   
+
+   

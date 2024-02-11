@@ -1,0 +1,214 @@
+    body {
+    margin: 0;
+    background: linear-gradient(rgba(85,37,130,0.8), rgba(85,37,130,0.8)), url('kontakt background.jpg') no-repeat;
+    background-size: cover; 
+    background-attachment: fixed;
+    }
+
+    .menu {
+    background: #552583;
+    height: 100px;
+    }
+    
+    .logo img {
+    width: 100px;
+    padding-top: 20px;
+    padding-left: 130px;
+    }
+    nav ul {
+    display: flex;
+    justify-content: space-between;
+    width: 30%;
+    margin: 0 auto;
+    position: relative;
+    bottom: 45px;
+    }
+
+    nav ul li {
+    list-style-type: none;
+    }
+
+    nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    }
+
+    nav ul li a:hover {
+    color: #f9a01b;
+    transition: color 0.4s;
+    }
+
+    .menu-button img {
+    width: 40px;
+    display: none;
+    }
+
+    .close-button img {
+    width: 40px;
+    display: none;
+    }
+
+    form {
+    text-align: center;
+    margin-top: 100px;
+    color: white;
+    }
+
+    input, textarea {
+    padding: 15px;
+    border-radius: 5px;
+    border: 1px solid white;
+    background: transparent;
+    justify-content: space-between;
+    margin-top: 25px;
+    }
+
+    .formular input[type="text"], 
+    .formular input[type="email"],
+    textarea {
+    width: 200px;
+    }
+
+
+    .formular input[type="text"], 
+    .formular input[type="email"], .formular input[type="submit"],
+    textarea {
+    color: white;
+    }
+
+    ::placeholder {
+    color: white;
+    }
+
+    input[type="submit"]:hover {
+    background: #f9a01b;
+    color: white;
+    border: transparent;
+    }
+
+    input[type="text"]:focus {
+    border: 4px solid #f9a01b;
+    }
+
+    input[type="email"]:focus {
+    border: 4px solid #f9a01b;
+    }
+
+    textarea:focus {
+    border: 4px solid #f9a01b;
+    }
+
+    .footer {
+        background: #552583;
+        position: relative;
+        top: 25px;
+        height: 100px;
+        }
+        
+        .footer h1 {
+        text-align: center;
+        color: white;
+        padding-top: 40px;
+        font-size: 17px;
+        }
+
+        .video {
+        margin: 0 auto;
+        width: 560px;
+        margin-top: 60px;
+        }
+
+
+    @media screen and (max-width: 1000px){
+
+        header {
+        background-color: transparent;
+        padding: 15px;
+        }
+        
+        nav {
+        position: fixed;
+        top: 0;
+        left: -100%;
+        width: 60%;
+        height: 100%;
+        background-color: #552583;
+        padding-top: 60px;
+        text-align: center;
+        transition: left 0.3s ease;
+        border-right: 2px solid white;
+        }
+        
+        nav ul {
+        list-style-type: none;
+        padding: 0;
+        display: block;
+        margin: 0 auto;
+        padding-top: 50px;
+        
+        }
+        
+        nav li {
+        padding: 15px;
+        }
+        
+        nav a {
+        display: block;
+        color: white;
+        text-decoration: none;
+        }
+        
+        .menu-button, .close-button {
+        display: block;
+        position: fixed;
+        top: 15px;
+        left: 15px;
+        cursor: pointer;
+        z-index: 1;
+        color: white;
+        }
+        
+        .close-button {
+        display: none;
+        }
+        
+        .menu-button {
+        position: static;
+        }
+        
+        .menu-button img {
+        width: 40px;
+        display: flex;
+        padding-top: 15px;
+        }
+        .close-button img {
+        width: 40px;
+        display: flex;
+        padding-top: 15px;
+        }
+        
+        .logo {
+        float: right;
+        padding-right: 20px;
+        }
+     }
+    
+     .mapa {
+    margin-top: 70px;
+    }
+
+    .location h1 {
+    margin-top: 150px;
+    }
+
+
+    @media screen and (max-width: 600px){
+        nav {
+        width: 100%;
+        }
+
+        .video {
+        width: 100%;
+        }
+        }
